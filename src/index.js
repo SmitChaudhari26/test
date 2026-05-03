@@ -5,6 +5,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+// Teammate added this array for users feature
+let users = [];
+
+
 app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'Task Manager API is running' });
 });
